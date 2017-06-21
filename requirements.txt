@@ -2,7 +2,7 @@ appnope==0.1.0
 bleach==2.0.0
 cffi==1.9.1
 click==6.7
-conda==4.3.11
+conda==4.3.16
 cryptography==1.7.1
 cycler==0.10.0
 decorator==4.0.11
@@ -48,6 +48,7 @@ pytz==2017.2
 pyzmq==16.0.2
 qtconsole==4.3.0
 requests==2.12.4
+ruamel.yaml==0.15.9
 simplegeneric==0.8.1
 six==1.10.0
 terminado==0.6
