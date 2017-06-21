@@ -1,8 +1,6 @@
-
 import pandas as pd
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt, mpld3
 plt.switch_backend("TkAgg")
-
 
 class GenerateGraph:
 
@@ -40,7 +38,6 @@ class GenerateGraph:
       self.dataDict['gender'] = gender
       self.dataDict['party'] = party
       self.dataDict['house'] = house
-      #print(self.dataDict)
       return self.dataDict
 
 
@@ -50,12 +47,11 @@ class GenerateGraph:
       house = p_house.unique()
       e = politicians.groupby(['party', 'gender']).size().unstack().plot(kind='barh', stacked=True,
                                                                          title='Gender count in House of %s' %
-                                                                               house[0], figsize=(19,10))
+                                                                               house[0], figsize=(15,8))
       e.set_xlabel("count")
       e.set_ylabel("party")
       e.legend(["Female", "Male"], loc=9, ncol=4, fontsize = 'large')
-      figure = e.get_figure()
-      figure.savefig("test.png", dpi=200)
+      mpld3.show()
 
 
 

@@ -24,7 +24,6 @@ class SetupGraph:
         r = requests.get(url, headers=SetupGraph.headers)
       except ValueError as err:
         print('Get request broken: {}'.format(err))
-        #r.encoding = "utf-8-sig"
         r.encoding = "utf-8"
 
       output = r.text
@@ -36,9 +35,11 @@ class SetupGraph:
       GenerateGraph(members).test()
 
   def _buildUrl(self):
-      params = self.search_constraints + '/' + self.outputs
+      params = self.search_constraints
+      params += '/'
+      params += self.outputs
       new_url = urljoin(self.baseUrl, params)
       return new_url
 
-graph = SetupGraph("House=Lords")
-graph.newGraph()
+#graph = SetupGraph()
+# graph.newGraph()
