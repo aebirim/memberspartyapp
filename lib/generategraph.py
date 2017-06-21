@@ -18,11 +18,11 @@ class GenerateGraph:
   def test(self):
       members = self.members['Members']['Member']
       members_data = members
-      name, gender, party, house = self.buildData(members_data)
-      dataDict = self.buildDict(name, gender, party, house)
-      self.buildGraph(dataDict)
+      name, gender, party, house = self._buildData(members_data)
+      dataDict = self._buildDict(name, gender, party, house)
+      self._buildGraph(dataDict)
 
-  def buildData(self, data):
+  def _buildData(self, data):
       for member in data:
           if self.name in self.dataMember:
              self.name.append(member['DisplayAs'])
@@ -35,7 +35,7 @@ class GenerateGraph:
 
       return self.name, self.gender, self.party, self.house
 
-  def buildDict(self, name, gender, party, house):
+  def _buildDict(self, name, gender, party, house):
       self.dataDict['member'] = name
       self.dataDict['gender'] = gender
       self.dataDict['party'] = party
@@ -44,7 +44,7 @@ class GenerateGraph:
       return self.dataDict
 
 
-  def buildGraph(self, dict):
+  def _buildGraph(self, dict):
       politicians = pd.DataFrame(dict)
       p_house = politicians['house']
       house = p_house.unique()

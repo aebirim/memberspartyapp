@@ -40,5 +40,5 @@ class SetupGraph:
       new_url = urljoin(self.baseUrl, params)
       return new_url
 
-graph = SetupGraph()
+graph = SetupGraph("House=Lords")
 graph.newGraph()
