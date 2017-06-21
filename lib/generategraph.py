@@ -56,7 +56,6 @@ class GenerateGraph:
       e.legend(["Female", "Male"], loc=9, ncol=4, fontsize = 'large')
       figure = e.get_figure()
       figure.savefig("test.png", dpi=200)
-      #plt.show()
 
 
 
