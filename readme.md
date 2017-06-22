@@ -21,7 +21,7 @@ The MNIS API can provide the following data on MPs using these parameters:
 Memberspartyapp still represents work in progress and demonstrates my ongoing education in the language of Python and aspects of Data Science. The application uses matplotlib, which is used to generate graphs from data and the library mpld3 which allows you to generate matplotlib data visualizations within a browser. It is shared "as is".
 
 ### Python requirements:
-The application is written in Python 3.6. It requires specific python packages which are installed through the Usage instructions.
+The application is written in Python 3.6. It requires specific python packages(located in requirements.txt) which are installed through the Usage instructions.
 
 ### Usage (launch app):
         git clone https://github.com/aebirim/memberspartyapp.git
