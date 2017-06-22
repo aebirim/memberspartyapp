@@ -38,6 +38,7 @@ The next iteration of this application would include the following:
   - Continuous refactoring
   - The development of a binary prediction model which uses Logistic Regression, a method for binary classification problems (problems with two class values) which could be used, for example, to predict political party based on gender in either House
   - To continue refinement of the data visualization logic
+  - Deployment to Heroku via Docker
 
 [mnisapi]: <http://data.parliament.uk/membersdataplatform/memberquery.aspx>
 [requests]: <http://docs.python-requests.org/en/master/>
