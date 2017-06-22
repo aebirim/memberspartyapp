@@ -18,17 +18,17 @@ The MNIS API can provide the following data on MPs using these parameters:
   - Parliamentary role
   - Committee
 
-Memberspartyapp still represents work in progress and demonstrates my ongoing education in the language of Python and aspects of Data Science. The application uses matplotlib and the library mpld3 which allows you to generate matplotlib data visualizations within a browser. It is shared "as is".
+Memberspartyapp still represents work in progress and demonstrates my ongoing education in the language of Python and aspects of Data Science. The application uses matplotlib, which is used to generate graphs from data and the library mpld3 which allows you to generate matplotlib data visualizations within a browser. It is shared "as is".
 
 ### Python requirements:
-The application is written in Python 3.6. It requires the [requests][requests] package, which pip will install automatically if it is not already present.
+The application is written in Python 3.6. It requires specific python packages which are installed through the Usage instructions.
 
 ### Usage (launch app):
         git clone https://github.com/aebirim/memberspartyapp.git
         cd /memberspartyapp
         pip install -r requirements.txt
         python app.py
-        
+
   - To obtain the breakdown in gender for House of Commons,
     use http://127.0.0.1:5000/commons
 
@@ -41,6 +41,7 @@ The next iteration of this application would include the following:
   - Continuous refactoring
   - The development of a binary prediction model which uses Logistic Regression, a method for binary classification problems (problems with two class values) which could be used, for example, to predict political party based on gender in either House
   - To continue refinement of the data visualization logic
+  - Improvement of test coverage
   - Deployment to Heroku via Docker
 
 [mnisapi]: <http://data.parliament.uk/membersdataplatform/memberquery.aspx>
