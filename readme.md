@@ -20,19 +20,19 @@ The MNIS API can provide the following data on MPs using these parameters:
 
 Memberspartyapp still represents work in progress and demonstrates my ongoing education in the language of Python and aspects of Data Science. The application uses matplotlib and the library mpld3 which allows you to generate matplotlib data visualizations within a browser. It is shared "as is".
 
-### Python requirements
+### Python requirements:
 The application is written in Python 3.6. It requires the [requests][requests] package, which pip will install automatically if it is not already present.
 
-### Usage (Launch app)
+### Usage (launch app):
   - Run python app.py in root of /memberspartyapp
 
   - To obtain the breakdown in gender for House of Commons,
     use http://127.0.0.1:5000/commons
-    
+
   - To obtain the breakdown in gender for House of Lords,
     use http://127.0.0.1:5000/lords
 
-### Next iteration
+### Next iteration:
 The next iteration of this application would include the following:
 
   - Refactoring of code to remove duplication where apparent
