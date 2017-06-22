@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt, mpld3
-plt.switch_backend("TkAgg")
+#plt.switch_backend("TkAgg")
 
 class GenerateGraph:
 
