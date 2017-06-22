@@ -24,8 +24,11 @@ Memberspartyapp still represents work in progress and demonstrates my ongoing ed
 The application is written in Python 3.6. It requires the [requests][requests] package, which pip will install automatically if it is not already present.
 
 ### Usage (launch app):
-  - Run python app.py in root of /memberspartyapp
-
+        git clone https://github.com/aebirim/memberspartyapp.git
+        cd /memberspartyapp
+        pip install -r requirements.txt
+        python app.py
+        
   - To obtain the breakdown in gender for House of Commons,
     use http://127.0.0.1:5000/commons
 

@@ -1,6 +1,4 @@
 import pandas as pd
-import tkinter
-tkinter
 import matplotlib.pyplot as plt, mpld3
 plt.switch_backend("TkAgg")
 
