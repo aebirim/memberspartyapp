@@ -23,9 +23,10 @@ Memberspartyapp still represents work in progress and demonstrates my ongoing ed
 ### Python requirements
 The application is written in Python 3.6. It requires the [requests][requests] package, which pip will install automatically if it is not already present.
 
-### Usage
-  - To obtain the breakdown in gender for House of Commons, use /memberspartyapp/commons
-  - To obtain the breakdown in gender for House of Lords, use /memberspartyapp/lords
+### Usage (Launch app)
+  - Run python app.py in root of /memberspartyapp
+  - To obtain the breakdown in gender for House of Commons, use http://127.0.0.1:5000/memberspartyapp/commons
+  - To obtain the breakdown in gender for House of Lords, use http://127.0.0.1:5000/memberspartyapp/lords
 
 ### Next iteration
 The next iteration of this application would include the following:
