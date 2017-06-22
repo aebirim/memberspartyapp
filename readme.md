@@ -25,8 +25,12 @@ The application is written in Python 3.6. It requires the [requests][requests] p
 
 ### Usage (Launch app)
   - Run python app.py in root of /memberspartyapp
-  - To obtain the breakdown in gender for House of Commons, use http://127.0.0.1:5000/memberspartyapp/commons
-  - To obtain the breakdown in gender for House of Lords, use http://127.0.0.1:5000/memberspartyapp/lords
+
+  - To obtain the breakdown in gender for House of Commons,
+    use http://127.0.0.1:5000/commons
+    
+  - To obtain the breakdown in gender for House of Lords,
+    use http://127.0.0.1:5000/lords
 
 ### Next iteration
 The next iteration of this application would include the following:
