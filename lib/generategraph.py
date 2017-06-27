@@ -1,4 +1,5 @@
 import pandas as pd
+import re
 import matplotlib.pyplot as plt, mpld3
 plt.switch_backend("TkAgg")
 
@@ -51,7 +52,11 @@ class GenerateGraph:
       e.set_xlabel("count")
       e.set_ylabel("party")
       e.legend(["Female", "Male"], loc=9, ncol=4, fontsize = 'large')
-      mpld3.show()
+
+      if re.match('Commons', house[0]):
+          mpld3.show()
+      else:
+          mpld3.show(port=8889)
 
 
 

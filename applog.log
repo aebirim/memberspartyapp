@@ -1,0 +1,7 @@
+Mon, 26 Jun 2017 17:31:49 INFO Application started
+Mon, 26 Jun 2017 17:31:49 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+Mon, 26 Jun 2017 17:31:59 DEBUG Starting new HTTP connection (1): data.parliament.uk
+Mon, 26 Jun 2017 17:32:00 DEBUG http://data.parliament.uk:80 "GET /membersdataplatform/services/mnis/members/query/House=Commons/Constituencies HTTP/1.1" 307 2109
+Mon, 26 Jun 2017 17:32:02 DEBUG http://data.parliament.uk:80 "GET /membersdataplatform/services/mnis/members/query/House=Commons/Constituencies/ HTTP/1.1" 200 1407881
+Tue, 27 Jun 2017 09:07:37 INFO commons route launched
+Tue, 27 Jun 2017 09:07:37 INFO 127.0.0.1 - - [27/Jun/2017 09:07:37] "GET /commons HTTP/1.1" 200 -

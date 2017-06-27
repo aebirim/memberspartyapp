@@ -3,7 +3,11 @@
 
   </head>
   <body>
-    <h1>House  </h1>
+     {% if house == "Lords" %}
+        <h1>House of {{ house }}  </h1>
+     {% else %}
+        <h1>House of Commons </h1>
+     {% endif %}
     <p>{{ data }}</p>
 
   </body>
