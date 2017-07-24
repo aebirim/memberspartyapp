@@ -35,9 +35,11 @@ class SetupGraph:
       GenerateGraph(members).test()
 
   def _buildUrl(self):
-      params = self.search_constraints
-      params += '/'
-      params += self.outputs
+      # params = self.search_constraints
+      # params += '/'
+      # params += self.outputs
+      new_params = [self.search_constraints, self.outputs]
+      params = '/'.join(new_params)
       new_url = urljoin(self.baseUrl, params)
       return new_url
 
