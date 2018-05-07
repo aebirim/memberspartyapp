@@ -36,7 +36,7 @@ The application is written in Python 3.6. It requires specific python packages (
 ### Next iteration:
 The next iteration of this application would include the following:
 
-  - Continuous refactoring
+  - Continuous refactoring of codebase
   - To continue refinement of the data visualization logic
   - Improvement of test coverage
   - Deployment to Heroku via Docker
