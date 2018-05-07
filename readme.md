@@ -24,8 +24,10 @@ The application is written in Python 3.6. It requires specific python packages (
 ### Usage (launch app):
         git clone https://github.com/aebirim/memberspartyapp.git
         cd /memberspartyapp
+
         #start app
         ./start.sh
+        
         #stop app
         ./stop.sh
 
