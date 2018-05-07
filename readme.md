@@ -21,13 +21,13 @@ Memberspartyapp still represents work in progress and demonstrates my ongoing ed
 ### Python requirements:
 The application is written in Python 3.6. It requires specific python packages (located in requirements.txt) which are installed through the Usage instructions, and the app launched, through a simple bash shell script.
 
-### Usage (launch app):
+### Usage (launch and stop app):
         git clone https://github.com/aebirim/memberspartyapp.git
         cd /memberspartyapp
 
         #start app
         ./start.sh
-        
+
         #stop app
         ./stop.sh
 
