@@ -14,8 +14,6 @@ The MNIS API provides the following data on members of Parliament using these pa
   - Date of Birth
   - Gender
   - Date first became an MP
-  - Number of days service (excluding dissolution periods)
-  - Parliamentary role
   - Committee
 
 Memberspartyapp still represents work in progress and demonstrates my ongoing education in the language of Python and aspects of Data Science. The application uses matplotlib, which is used to generate graphs from data and the library mpld3 which allows you to generate matplotlib data visualizations within a browser. It is shared "as is".
