@@ -4,8 +4,6 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt, mpld3
 plt.switch_backend('Agg')
 
-
-
 class GenerateGraph:
 
   def __init__(self, members):
@@ -54,7 +52,7 @@ class GenerateGraph:
       p_house = politicians['house']
       house = p_house.unique()
       graph = politicians.groupby(['party', 'gender']).size().unstack().plot(kind='barh', stacked=True,
-                                                                         title='Gender Breakdown In UK Parliament House of %s' %
+                                                                         title='Gender Breakdown In UK Parliament - House of %s' %
                                                                                house[0], figsize=(15,8))
       graph.set_xlabel("count")
       graph.set_ylabel("party")
