@@ -1,5 +1,5 @@
 # memberspartyapp
-memberspartyapp is a simple Flask app that shows the breakdown in gender for the House of Commons and the House of Lords using the [Members Names Information Service][mnisapi].
+memberspartyapp is a simple Flask app that shows the breakdown in gender for the House of Commons and Lords, in the UK Parliament, using the [Members Names Information Service][mnisapi].
 
 The MNIS API is the public interface to the UK Parliament's Members Names database, a comprehensive database of all MPs elected to Parliament since 1983. The API is flexible and powerful, but is straightforward to use.
 
@@ -39,7 +39,6 @@ The application is written in Python 3.6. It requires specific python packages (
 The next iteration of this application would include the following:
 
   - Continuous refactoring
-  - The development of a binary prediction model which uses Logistic Regression, a method for binary classification problems (problems with two class values) which could be used, for example, to predict political party based on gender in either House
   - To continue refinement of the data visualization logic
   - Improvement of test coverage
   - Deployment to Heroku via Docker
