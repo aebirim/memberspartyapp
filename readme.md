@@ -3,7 +3,7 @@ Memberspartyapp is a simple Flask app that shows the breakdown in gender for the
 
 The [MNIS][mnisapi] API is the public interface to the UK Parliament's Members Names database, a comprehensive database of all MPs elected to Parliament since 1983. The API is flexible and powerful, but is straightforward to use.
 
-At the most basic level, the mnis api allows you to download key data on all MPs to text and then converted to json. It makes it easy to obtain the same summary data for MPs as a list of Python dictionaries, or alternatively to get the full data for each MP returned by the API. The parameters sent to the API provides an analysis of MPs' careers.
+At the most basic level, the mnis api allows you to download key data on all MPs to converted to json. It makes it easy to obtain the same summary data for MPs as a list of Python dictionaries, or alternatively to get the full data for each MP returned by the API. The parameters sent to the API provides an analysis of MPs' careers.
 
 The MNIS API provides the following data on members of Parliament using these parameters:
 
