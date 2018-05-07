@@ -24,7 +24,10 @@ The application is written in Python 3.6. It requires specific python packages (
 ### Usage (launch app):
         git clone https://github.com/aebirim/memberspartyapp.git
         cd /memberspartyapp
-        ./launch.sh
+        #start app
+        ./start.sh
+        #stop app
+        ./stop.sh
 
   - To obtain the breakdown in gender for House of Commons,
     use http://127.0.0.1:5000/commons
