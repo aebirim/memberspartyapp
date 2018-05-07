@@ -1,7 +1,7 @@
 # memberspartyapp
 memberspartyapp is a simple Flask app that shows the breakdown in gender for the House of Commons, and Lords, in the [UK Parliament][parliament]. The app uses the [Members Names Information Service][mnisapi].
 
-The MNIS API[mnisapi] is the public interface to the UK Parliament's Members Names database, a comprehensive database of all MPs elected to Parliament since 1983. The API is flexible and powerful, but is straightforward to use.
+The [MNIS API][mnisapi] is the public interface to the UK Parliament's Members Names database, a comprehensive database of all MPs elected to Parliament since 1983. The API is flexible and powerful, but is straightforward to use.
 
 At the most basic level, the mnis api allows you to download key data on all MPs to text and then converted to json. It makes it easy to obtain the same summary data for MPs as a list of Python dictionaries, or alternatively to get the full data for each MP returned by the API. The parameters sent to the API provides an analysis of MPs' careers.
 
