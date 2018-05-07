@@ -55,7 +55,7 @@ class GenerateGraph:
                                                                          title='Gender Breakdown In UK Parliament - House of %s' %
                                                                                house[0], figsize=(15,8))
       graph.set_xlabel("count")
-      graph.set_ylabel("party")
+      graph.set_ylabel("political_party")
       graph.legend(["Female", "Male"], loc=9, ncol=4, fontsize = 'large')
       mpld3.show()
 
