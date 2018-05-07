@@ -18,5 +18,5 @@ def lords():
     return render_template('index.html', data = graph.newGraph())
 
 if __name__ == "__main__":
-    app.run()
+      app.run()
 
