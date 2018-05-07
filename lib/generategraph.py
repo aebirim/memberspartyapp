@@ -1,6 +1,10 @@
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt, mpld3
-plt.switch_backend("TkAgg")
+plt.switch_backend('Agg')
+
+
 
 class GenerateGraph:
 
@@ -49,12 +53,12 @@ class GenerateGraph:
       politicians = pd.DataFrame(dict)
       p_house = politicians['house']
       house = p_house.unique()
-      e = politicians.groupby(['party', 'gender']).size().unstack().plot(kind='barh', stacked=True,
+      graph = politicians.groupby(['party', 'gender']).size().unstack().plot(kind='barh', stacked=True,
                                                                          title='Gender Breakdown In UK Parliament House of %s' %
                                                                                house[0], figsize=(15,8))
-      e.set_xlabel("count")
-      e.set_ylabel("party")
-      e.legend(["Female", "Male"], loc=9, ncol=4, fontsize = 'large')
+      graph.set_xlabel("count")
+      graph.set_ylabel("party")
+      graph.legend(["Female", "Male"], loc=9, ncol=4, fontsize = 'large')
       mpld3.show()
 
 
