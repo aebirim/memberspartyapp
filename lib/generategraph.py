@@ -27,7 +27,11 @@ class GenerateGraph:
           if self.gender in self.dataMember:
              self.gender.append(member['Gender'])
           if self.party in self.dataMember:
-             self.party.append(member['Party']['#text'])
+             try:
+                self.party.append(member['Party']['#text'])
+             except TypeError:
+                member['Party'] = 'Non-affiliated'
+                self.party.append(member['Party'])
           if self.house in self.dataMember:
              self.house.append(member['House'])
 
@@ -46,7 +50,7 @@ class GenerateGraph:
       p_house = politicians['house']
       house = p_house.unique()
       e = politicians.groupby(['party', 'gender']).size().unstack().plot(kind='barh', stacked=True,
-                                                                         title='Gender count in House of %s' %
+                                                                         title='Gender Breakdown In UK Parliament House of %s' %
                                                                                house[0], figsize=(15,8))
       e.set_xlabel("count")
       e.set_ylabel("party")
